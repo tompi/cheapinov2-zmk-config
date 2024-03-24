@@ -5,8 +5,8 @@
 # pass flags to the build command and `artifact-name` to assign a name to
 # distinguish build outputs from each other:
 #
-# board: [ "nice_nano_v2" ]
-# shield: [ "corne_left", "corne_right" ]
+board: [ "seeduino_xiao_ble" ]
+shield: [ "cheapinov2_left", "cheapinov2_right" ]
 # include:
 #   - board: bdn9_rev2
 #   - board: nice_nano_v2
