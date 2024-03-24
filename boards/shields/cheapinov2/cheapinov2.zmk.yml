@@ -1,0 +1,11 @@
+file_format: "1"
+id: cheapinov2
+name: Cheapino v2
+type: shield
+url: https://github.com/tompi/cheapino
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - cheapinov2_left
+  - cheapinov2_right
