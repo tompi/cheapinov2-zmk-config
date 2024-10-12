@@ -7,13 +7,5 @@
 #include "cheapinov2.dtsi"
 
 &default_transform {
-    col-offset = <5>;
-};
-
-&kscan0 {
-    col-gpios
-    = <&xiao_d 6 GPIO_ACTIVE_HIGH>
-    , <&xiao_d 5 GPIO_ACTIVE_HIGH>
-    , <&xiao_d 4 GPIO_ACTIVE_HIGH>
-    ;
+    col-offset = <7>;
 };
