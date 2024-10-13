@@ -7,5 +7,5 @@
 #include "cheapinov2.dtsi"
 
 &default_transform {
-    col-offset = <7>;
+    col-offset = <6>;
 };
