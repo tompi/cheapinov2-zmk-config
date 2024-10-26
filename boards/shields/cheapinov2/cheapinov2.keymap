@@ -67,9 +67,9 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp F       &kp P         &kp B           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
-                &kp A       &kp R       &kp S       &kp T         &kp G           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
+                &kp A       &kp R       &kp S       &kp T         &kp G           &kp M       &kp N       &kp E       &kp I       &kp O
                 &kp Z       &kp X       &kp C       &kp D         &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH
-                                        &kp J       &kp H         &kp Y           &lt SYM RET &kp BSPC    &kp BSPC
+                                        &kp ESC     &kp SPACE     &kp TAB         &lt RET     &kp BSPC    &kp BSPC
                         >;
                 };
 
