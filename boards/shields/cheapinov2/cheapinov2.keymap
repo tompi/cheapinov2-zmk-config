@@ -64,7 +64,7 @@
           bindings = <
           &none &kp HOME &kp DELETE &kp PAGE_UP &none &none &none &none &none &none 
           &none &kp LEFT &kp UP &kp RIGHT &none &none &trans &trans &trans &trans 
-          &none &kp END &kp DOWN &kp PAGE_DOWN &none &none &none &none &none &none 
+          &none &kp END &kp DOWN &kp PAGE_DOWN &none &none &none &none &none &studio_unlock 
               &none &trans &trans &none &none &none
           >;
         };
