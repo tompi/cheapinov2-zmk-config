@@ -1,6 +1,6 @@
 //     ___ _                      _
-//    / __\ |__   ___  __ _ _ __ (_)_ __   ___
-//   / /  | '_ \ / _ \/ _` | '_ \| | '_ \ / _ \
+//    / __\ |___  ___  __ _ _ __ (_)_ ___  ____
+//   / /  | '_  \/ _ \/ _` | '_ \| | '_  \/ _  \
 //  / /___| | | |  __/ (_| | |_) | | | | | (_) |
 //  \____/|_| |_|\___|\__,_| .__/|_|_| |_|\___/
 //                         |_|
@@ -21,29 +21,13 @@
   tapping-term-ms = <170>;
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS BACKSPACE>;
+};
+
 / {
-    combos {
-            compatible = "zmk,combos";
-            combo_esc {
-                timeout-ms = <50>;
-                key-positions = <0 1>;
-                bindings = <&kp ESC>;
-            };
-    };
-
-
         keymap {
                 compatible = "zmk,keymap";
-        /*
-        BASE {
-          bindings = <
-          &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp SEMICOLON
-          &kp A &kp R &kp S &kp T &kp G &kp M &kp N &kp E &kp I &kp O
-          &kp Z &kp X &kp C &kp D &kp V &kp K &kp H &kp COMMA &kp DOT &kp SLASH
-          &kp ESCAPE &kp SPACE &kp TAB &kp DELETE &kp BACKSPACE &kp ENTER
-          >;
-        };
-        */
         BASE {
           bindings = <
           &kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &kp SEMICOLON
@@ -56,35 +40,35 @@
           bindings = <
           &kp C_VOLUME_UP &none &none &none &none &none &none &none &none &kp C_POWER 
           &none &none &none &none &kp C_MUTE &none &trans &trans &trans &trans 
-          &kp C_VOLUME_DOWN &kp C_NEXT &none &none &kp C_PLAY_PAUSE &none &none &none &none 
-              &none &none &trans &trans &none &none &none
+          &kp C_VOLUME_DOWN &kp C_NEXT &none &none &kp C_PLAY_PAUSE &none &none &none &none &none 
+              &none &trans &trans &none &none &none
           >;
         };
         NAV {
           bindings = <
           &none &kp HOME &kp DELETE &kp PAGE_UP &none &none &none &none &none &none 
-          &none &kp LEFT &kp UP &kp RIGHT &none &none &trans &trans &trans &trans 
+          &caps_word &kp LEFT &kp UP &kp RIGHT &none &none &trans &trans &trans &trans 
           &none &kp END &kp DOWN &kp PAGE_DOWN &none &none &none &none &none &studio_unlock 
               &none &trans &trans &none &none &none
           >;
         };
-        layer3 {
+        SYMBOL_RIGHT {
           bindings = <
-          &none &none &none &none &none &none &none &none &kp GRAVE &none &trans 
-          &trans &trans &trans &none &none &kp TAB &none &none &none &none 
-          &none &none &none &none &none &kp SINGLE_QUOTE &kp BACKSLASH &kp SLASH &none &none 
-              &none &none &trans &trans &none
+          &none &none &none &none &none         &kp AT &kp UNDERSCORE &kp PIPE &kp GRAVE &kp PERCENT
+          &trans &trans &trans &none &none      &kp HASH &kp TAB &kp EXCLAMATION &kp DOUBLE_QUOTES &kp DOLLAR
+          &none &none &none &none &none         &kp TILDE &kp SINGLE_QUOTE &kp BACKSLASH &kp SLASH &kp AMPERSAND
+              &trans &trans &trans &trans &trans &trans
           >;
         };
-        layer4 {
+        SYMBOL_LEFT {
           bindings = <
-          &kp GRAVE &none &none &none &kp SEMICOLON &none &none &none &none &none 
-          &none &none &none &none &none &none &trans &trans &trans &trans 
-          &kp MINUS &none &kp LEFT_BRACKET &kp RIGHT_BRACKET &trans &none &none &none &none &none 
-              &none &trans &trans &trans &none &none
+          &kp GRAVE &kp CARET &kp LESS_THAN &kp GREATER_THAN &kp SEMICOLON              &none &none &none &none &none 
+          &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &none &none &trans &trans &trans &trans 
+          &kp MINUS &none &kp LEFT_BRACKET &kp RIGHT_BRACKET &trans                     &none &none &none &none &none 
+                                                    &none &trans &trans &trans &none &none
           >;
         };
-        layer5 {
+        FUNCTION {
           bindings = <
           &kp C_POWER &none &none &none &none &none &kp F7 &kp F8 &kp F9 &kp F10 
           &trans &trans &trans &trans &none &none &kp F4 &kp F5 &kp F6 &kp F11 
@@ -92,7 +76,7 @@
               &trans &trans &trans &trans &trans &trans
           >;
         };
-        layer6 {
+        NUMPAD {
           bindings = <
           &none &none &none &none &none &kp KP_PLUS &kp N7 &kp N8 &kp N9 &kp KP_ASTERISK 
           &none &trans &trans &trans &none &kp KP_MINUS &kp N4 &kp N5 &kp N6 &kp KP_SLASH 
