@@ -8,6 +8,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/mouse.h>
 
 #define BASE 0
 #define MEDIA  1
@@ -46,17 +47,17 @@
         };
         NAV {
           bindings = <
-          &none &kp HOME &kp DELETE &kp PAGE_UP &none &none &none &none &none &none 
+          &none &kp HOME &kp DELETE &kp PAGE_UP &none &none &none &none &none &studio_unlock
           &caps_word &kp LEFT &kp UP &kp RIGHT &none &none &trans &trans &trans &trans 
-          &none &kp END &kp DOWN &kp PAGE_DOWN &none &none &none &none &none &studio_unlock 
+          &none &kp END &kp DOWN &kp PAGE_DOWN &none &none &mkp MB1 &mkp MB2 &mkp MB3 &mkp MB4
               &none &trans &trans &none &none &none
           >;
         };
         SYMBOL_RIGHT {
           bindings = <
-          &none &none &none &none &none         &kp AT &kp UNDERSCORE &kp PIPE &kp GRAVE &kp PERCENT
-          &trans &trans &trans &none &none      &kp HASH &kp TAB &kp EXCLAMATION &kp DOUBLE_QUOTES &kp DOLLAR
-          &none &none &none &none &none         &kp TILDE &kp SINGLE_QUOTE &kp BACKSLASH &kp SLASH &kp AMPERSAND
+          &none &none &none &none &none                 &kp AT &kp UNDERSCORE &kp PIPE &kp GRAVE &kp PERCENT
+          &trans &trans &trans &none &none              &kp HASH &kp TAB &kp EXCLAMATION &kp DOUBLE_QUOTES &kp DOLLAR
+          &mkp MB4 &mkp MB3 &mkp MB2 &mkp MB1 &none     &kp TILDE &kp SINGLE_QUOTE &kp BACKSLASH &kp SLASH &kp AMPERSAND
               &trans &trans &trans &trans &trans &trans
           >;
         };
