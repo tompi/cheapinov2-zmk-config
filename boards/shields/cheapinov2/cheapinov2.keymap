@@ -19,7 +19,7 @@
   quick-tap-ms = <150>;
   global-quick-tap;
   flavor = "tap-preferred";
-  tapping-term-ms = <350>;
+  tapping-term-ms = <250>;
   require-prior-idle-ms = <150>;
   hold-trigger-on-release;
 };
